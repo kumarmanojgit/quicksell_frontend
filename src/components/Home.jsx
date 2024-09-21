@@ -87,7 +87,7 @@ const Home = () => {
     tickets: [],
     users: [],
   });
-  const [isDataLoaded, setIsDataLoaded] = useState(false);
+  // const [isDataLoaded, setIsDataLoaded] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -96,7 +96,7 @@ const Home = () => {
           "https://api.quicksell.co/v1/internal/frontend-assignment"
         );
         setData(response.data);
-        setIsDataLoaded(true);
+        // setIsDataLoaded(true);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
